@@ -11,7 +11,6 @@ describe './lib/tic_tac_toe.rb' do
 
       play(board)
     end
-  end
 
     it 'checks if the game is over after every turn' do
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
