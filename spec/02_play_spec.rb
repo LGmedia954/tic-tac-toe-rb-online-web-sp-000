@@ -118,7 +118,8 @@ describe './lib/tic_tac_toe.rb' do
     it 'plays through an entire game' do
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
       allow($stdout).to receive(:puts)
-
+      
+    # expect(self).to receive(:turn).at_most(1000).times
       expect(self).to receive(:gets).and_return("1")
       expect(self).to receive(:gets).and_return("2")
       expect(self).to receive(:gets).and_return("3")
